@@ -1,0 +1,26 @@
+dependencies:
+ - name: bubble-treemaps
+   version: 0
+   src: htmlwidgets/bubble-treemaps-master/build/
+   script:
+    - d3-bubbletreemap.js
+ - name: jquery
+   version: 3.2.1
+   src: htmlwidgets/
+   script:
+    - jquery-3.2.1.min.js
+ - name: d3
+   version: 4.0
+   src: htmlwidgets/
+   script:
+    - d3.v4.js
+ - name: planck-js
+   version: 0.1
+   src: htmlwidgets/
+   script:
+    - planck.js
+ - name: style
+   version: 0.1
+   src: htmlwidgets/
+   stylesheet:
+    - bubbletree.css

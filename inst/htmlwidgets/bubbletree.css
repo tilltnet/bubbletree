@@ -1,0 +1,36 @@
+html, body {
+    margin:0;
+    padding:0;
+    overflow:hidden
+    background-color: lightblue;
+}
+
+
+
+circle {
+  fill: white;
+  stroke-width: 2px;
+  stroke: black;
+}
+
+circle:hover {
+  stroke-width: 4px;
+  fill: lightblue;
+
+}
+
+text {
+  position: relative;
+  top: 160px;
+}
+
+
+div.bubbletree {
+        position: relative;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+}
+
+svg { position:relative; top:0; left:0; height:100%; width:100% }
