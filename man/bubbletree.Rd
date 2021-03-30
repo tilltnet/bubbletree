@@ -10,7 +10,7 @@ bubbletree(
   height = NULL,
   elementId = NULL,
   settings = list(smoothness = 30, padding = 10, resizing_factor = 20, max_textsize =
-    0.18, min_textsize_scale = 2)
+    0.3, min_textsize_scale = 0.1)
 )
 }
 \description{

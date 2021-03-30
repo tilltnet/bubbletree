@@ -94,6 +94,7 @@ td2 <- hc_to_d3(hclust_object = cluster_data2,
 
 bubbletree(td, settings = list(padding = 1, resizing_factor = 20, max_textsize = 0.05))
 bubbletree(td, settings = list(padding = 2, min_textsize_scale = 6, max_textsize = 4))
+bubbletree(td, settings = list(padding = 2))
 
 
 #target_indicator <- readRDS("inst/target_indicator.RDS")

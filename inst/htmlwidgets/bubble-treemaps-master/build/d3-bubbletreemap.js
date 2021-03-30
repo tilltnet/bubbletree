@@ -645,8 +645,7 @@ function drawChart(data, svg, padding, curvature, width, height, resizing_factor
 
     let labelNodes = getLabels(leafNodes);
 
-    var fontSizeScale = d3.scaleLinear()
-            .range([min_textsize_scale, 10]);
+    var fontSizeScale = d3.scaleLinear();
 
     circleLabels.selectAll("text")
         .data(labelNodes)
@@ -657,7 +656,8 @@ function drawChart(data, svg, padding, curvature, width, height, resizing_factor
         .attr("font-size", function(d) {
             fontSizeScale.domain([d.smallest_in_group,
                                       d.biggest_in_group]);
-            return fontSizeScale(d.size) * max_textsize + "px";})
+            fontSizeScale.range([d.parent_size * min_textsize_scale, d.parent_size * max_textsize]);
+            return fontSizeScale(d.size)  + "px";})
         .attr("font-family", "Arial, Helvetica, sans-serif")
         .attr("alignment-baseline", "middle")
         .attr("position", "relative")

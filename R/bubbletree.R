@@ -13,8 +13,8 @@ bubbletree <-
            settings = list(smoothness = 30,
                            padding = 10,
                            resizing_factor = 20,
-                           max_textsize = .18,
-                           min_textsize_scale = 2)) {
+                           max_textsize = .3,
+                           min_textsize_scale = .1)) {
 
     settings <- modifyList(eval(formals()$settings), settings)
 
